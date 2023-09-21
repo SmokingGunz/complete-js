@@ -38,3 +38,12 @@ console.log(isMyPopulationBigger);
 const newDescription = `I live in the ${country}, which is location in ${continent}. We have a population of ${population} people. I speak ${language}. Did you know ${description}?`;
 
 console.log(newDescription);
+
+// if else statements 
+population = 40000000;
+
+if (population > 33000000) {
+    console.log('Portugals population is above average');
+} else {
+    console.log('Portugals population is below average');
+}
