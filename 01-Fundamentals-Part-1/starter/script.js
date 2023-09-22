@@ -170,7 +170,7 @@ if (birthYear <= 2000) {
 }
 
 console.log(century);
-*/
+
 
 // type conversion 
 const inputYear = '1991';
@@ -191,3 +191,4 @@ console.log('23' * '2');
 let n = '1' + 1;
 n = n - 1;
 console.log(n);
+*/
