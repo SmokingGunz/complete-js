@@ -69,7 +69,7 @@ const ageSarah = now - 2018;
 console.log(ageJonas, ageSarah);
 
 console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
-// 2 ** 3 means 2 to the power of 3 = 2 * 2 *2 
+// 2 ** 3 means 2 to the power of 3 = 2 * 2 *2
 
 const firstName = 'Jonas';
 const lastName = 'Shmedtmann';
@@ -146,8 +146,8 @@ console.log('String with \n\
 multiple \n\
 lines');
 
-console.log(`String with 
-multiple 
+console.log(`String with
+multiple
 lines `);
 
 
@@ -172,7 +172,7 @@ if (birthYear <= 2000) {
 console.log(century);
 
 
-// type conversion 
+// type conversion
 const inputYear = '1991';
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
@@ -182,7 +182,7 @@ console.log(typeof NaN);
 
 console.log(String(23), 23);
 
-// type coercion 
+// type coercion
 console.log('I am ' + 23 + ' years old');
 console.log('I am ' + '23' + ' years old');
 console.log('23' - '10' - 3);
@@ -191,4 +191,31 @@ console.log('23' * '2');
 let n = '1' + 1;
 n = n - 1;
 console.log(n);
+
+// 2.21 Truthy and Falsy Values
+
+// 5 truthy values: 1,!0,!undefined,!null,!NaN
+// 5 falsy values: 0, '', undefined, null, NaN,
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 100;
+if (money) {
+    console.log(`Don't spend it all ;)`);
+} else {
+    console.log(`You should get a job!`);
+}
+
+let height = 0;
+if (height) {
+    console.log(`Yay! height is defined`);
+} else {
+    console.log(`Height is undefined`)
+}
 */
+
+
