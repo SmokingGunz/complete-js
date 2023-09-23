@@ -77,3 +77,29 @@ if (population < 50000000 && language === 'English' && !isIsland) {
 } else {
     console.log('Portugal does not meet your criteria!');
 }
+
+// Switch statements 
+
+language = 'French';
+
+switch (language) {
+    case 'Chinese':
+    case 'Mandarin':
+        console.log('MOST number of native speakers!');
+        break;
+    case 'Spanish':
+        console.log(`2nd place in number of native speakers!`);
+        break;
+    case 'English':
+        console.log(`3rd place`)
+        break;
+    case 'Hindi':
+        console.log(`4th place`)
+        break;
+    case 'Arabic':
+        console.log(`5th place`)
+        break;
+    default:
+        console.log('Great language too :D!');
+        break;
+}
