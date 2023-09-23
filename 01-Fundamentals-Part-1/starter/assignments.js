@@ -1,3 +1,4 @@
+
 const country = 'United States';
 const continent = 'North America';
 let population = 1000000;
@@ -57,12 +58,22 @@ console.log(5 + 6 + '4' + 9 - 4 - 2)
 
 // Equality Operators == vs. ===
 
-const numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
+// const numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
 
-if (numNeighbours === 1) {
-    console.log('Only 1 border!');
-} else if (numNeighbours > 1) {
-    console.log('More than 1 border!');
+// if (numNeighbours === 1) {
+//     console.log('Only 1 border!');
+// } else if (numNeighbours > 1) {
+//     console.log('More than 1 border!');
+// } else {
+//     console.log('No border!');
+// }
+
+// Logical Operators
+
+console.log(population, language, isIsland);
+
+if (population < 50000000 && language === 'English' && !isIsland) {
+    console.log('You should live in Portugal!');
 } else {
-    console.log('No border!');
+    console.log('Portugal does not meet your criteria!');
 }

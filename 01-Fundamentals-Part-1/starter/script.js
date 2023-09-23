@@ -307,6 +307,7 @@ TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
 //     console.log(`It's a tie!`);
 // }
 
+/*
 const dolphinsGame1 = 97;
 const koalasGame1 = 109;
 
@@ -329,4 +330,48 @@ if (dolphinsAverage > koalasAverage && dolphinsAverage >= 100) {
     console.log(`It's a tie!`);
 } else {
     console.log(`No one wins!`);
+}
+*/
+
+// 2.26 The Switch Statement
+
+const day = 'Thursday';
+
+switch (day) {
+    case 'Monday': // day === 'Monday'
+        console.log(`Plan course structure!`);
+        console.log('Go to coding meetup');
+        break;
+    case 'Tuesday': // day === 'Tuesday'
+        console.log(`Prepare theory videos`);
+        break;
+    case 'Wednesday':
+    case 'Thursday':
+        console.log(`Write code examples`);
+        break;
+    case 'Friday':
+        console.log(`Record videos`);
+        break;
+    case 'Saturday':
+    case 'Sunday':
+        console.log(`Enjoy the weekend!`);
+        break;
+    default:
+        console.log(`That's not a weekday!`);
+        break;
+}
+
+if (day === 'Monday') {
+    console.log(`Plan course structure!`);
+    console.log('Go to coding meetup');
+} else if (day === 'Tuesday') {
+    console.log(`Prepare theory videos`);
+} else if (day === 'Wednesday' || day === 'Thursday') {
+    console.log(`Write code examples`);
+} else if (day === 'Friday') {
+    console.log(`Record videos`);
+} else if (day === 'Saturday' || day === 'Sunday') {
+    console.log(`Enjoy the weekend!`);
+} else {
+    console.log(`That's not a weekday!`);
 }
