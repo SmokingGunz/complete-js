@@ -331,7 +331,7 @@ if (dolphinsAverage > koalasAverage && dolphinsAverage >= 100) {
 } else {
     console.log(`No one wins!`);
 }
-*/
+
 
 // 2.26 The Switch Statement
 
@@ -375,3 +375,22 @@ if (day === 'Monday') {
 } else {
     console.log(`That's not a weekday!`);
 }
+
+
+// 2.27 Statments and Expressions
+
+3 + 4;
+1991
+true && false && !false;
+
+if (23 > 10) {
+    const str = '23 is greater than 10';
+}
+
+const me = `Jonas`;
+console.log(`I'm ${2037 - 1991} years old ${me}.`)
+*/
+
+// 2.28 The Conditional (Ternary) Operator
+
+
