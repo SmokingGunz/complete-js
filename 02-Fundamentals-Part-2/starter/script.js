@@ -12,7 +12,7 @@ if (hasDriversLicense) console.log(`I can drive!`);
 // const private = 23;
 
 // const if = 'Statement';
-*/
+
 
 // 3.33 Functons
 
@@ -38,4 +38,25 @@ const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
 const num = Number(`23`)
+
+
+// 3.34 Function Declarations vs. Expressions
+
+// function declaration
+const age1 = calcAge1(1991);
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
+
+// function expression
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+const age2 = calcAge2(1991);
+
+console.log(age1);
+console.log(age2);
+*/
+
+// 3.35 Arrow Functions
 
