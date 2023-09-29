@@ -93,7 +93,7 @@ function fruitProcessor(apples, oranges) {
 console.log(fruitProcessor(2, 3));
 
 
-// Fucntion Review
+// 3.37 Fucntion Review
 
 const calcAge = function (birthYear) {
     return 2037 - birthYear;
@@ -129,7 +129,7 @@ const calcAge2 = function (birthYear) {
 const calcAge3 = birthYear => 2037 - birthYear;
 */
 
-/*  
+/*
 CHALLENGE #1
 Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new gymnastics discipline, which works differently.
 
@@ -157,7 +157,7 @@ TEST DATA 1: Dolphins scored 44, 23, and 71. Koalas scored 65, 54, and 49.
 
 TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.
 */
-
+/*
 const calcAverage = (score1, score2, score3) => {
 
     return (score1 + score2 + score3) / 3;
@@ -183,3 +183,9 @@ const checkWinner = (avgDolphins, avgKoalas) => {
 
 checkWinner(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins2, scoreKoalas2);
+*/
+
+// 3.39 Introduction to Arrays
+
+
+
