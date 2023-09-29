@@ -73,7 +73,7 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1991, 'Eric'));
 console.log(yearsUntilRetirement(1986, 'Bob'));
-*/
+
 
 // 3.36 Functions Calling Other Functions
 
@@ -91,5 +91,29 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
+*/
+
+// Fucntion Review
+
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirement = 65 - age;
+
+    if (retirement > 0) {
+        return retirement;
+        console.log(`${firstName} has ${retirement} years until retirement.`)
+    } else {
+        return -1;
+        console.log(`${firstName} is retired!`)
+    }
+}
+
+console.log(yearsUntilRetirement(1991, 'Eric'));
+console.log(yearsUntilRetirement(1950, 'Eric'));
+
 
 
