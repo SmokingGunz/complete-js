@@ -185,7 +185,56 @@ checkWinner(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins2, scoreKoalas2);
 */
 
-// 3.39 Introduction to Arrays
+/**
+
+// 3.39 Introduction to Array
+
+const friend1 = 'Michael';
+const friend2 = 'John';
+const friend3 = 'Jane';
+
+const friends = ['Michael', 'John', 'Jane'];
+console.log(friends);
+
+// const years = new Array(1991, 1992, 1993, 1994);
+
+console.log(friends[0]);
+console.log(friends[1]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Bob';
+console.log(friends);
+
+friends[friends.length - 1] = 'Sally';
+console.log(friends);
+
+// friends = ['Michael', 'John', 'Jane', 'Bob', 'Sally']; cannot do this!!
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Shmedtmann', 2037 - 1991, 'teacher', friends];
+console.log(jonas);
+
+// Exercise
+const calcAge = (birthYear) => {
+    return 2037 - birthYear;
+}
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+
+console.log(ages);
+*/
+
+// 3.40 Array Methods
 
 
 
