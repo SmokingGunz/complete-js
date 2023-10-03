@@ -308,10 +308,3 @@ TEST DATA: 125, 555, and 44.
 // console.log(totals);
 
 // Introduction to Objects
-
-const friend1 = 'Michael';
-const friend2 = 'John';
-const friend3 = 'Jane';
-
-const friends = ['Michael', 'John', 'Jane'];
-console.log(friends);
