@@ -325,7 +325,7 @@ const jonas = {
     job: 'teacher',
     friends: ['Michael', 'John', 'Jane']
 };
-*/
+
 
 // 3.43 Dot vs. Bracket notation
 
@@ -348,4 +348,25 @@ console.log(jonas['last' + nameKey]);
 
 // cannot do this!! vvvv
 // console.log(jonas.'first' + nameKey);
+
+const interestedIn = prompt(`What do you want to know about jonas? Choose between firstName, lastName, age, job, and friends.`)
+
+
+if (jonas[interestedIn]) {
+    console.log(jonas[interestedIn]);
+} else {
+    console.log(`No ${interestedIn} found!`);
+}
+
+jonas.location = 'Portland';
+jonas['twitter'] = '@jonasschmedtmann';
+console.log(jonas);
+
+// Challenge
+// "Jonas has 3 friends, and his best friend is called Michael."
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}.`);
+*/
+
+// 3.44 Object Methods
 
