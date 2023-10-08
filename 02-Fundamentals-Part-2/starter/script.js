@@ -307,6 +307,21 @@ TEST DATA: 125, 555, and 44.
 
 // console.log(totals);
 
-// Introduction to Objects
+// 3.42 Introduction to Objects
 
+const jonasArray = [
+    'Jonas',
+    'Shmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'John', 'Jane']
+];
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Shmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'John', 'Jane']
+};
 
