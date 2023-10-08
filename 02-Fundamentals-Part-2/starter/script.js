@@ -307,6 +307,7 @@ TEST DATA: 125, 555, and 44.
 
 // console.log(totals);
 
+/*
 // 3.42 Introduction to Objects
 
 const jonasArray = [
@@ -324,4 +325,27 @@ const jonas = {
     job: 'teacher',
     friends: ['Michael', 'John', 'Jane']
 };
+*/
+
+// 3.43 Dot vs. Bracket notation
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Shmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'John', 'Jane']
+};
+
+console.log(jonas);
+
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+// cannot do this!! vvvv
+// console.log(jonas.'first' + nameKey);
 
