@@ -369,3 +369,9 @@ console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his bes
 */
 
 // 3.44 Object Methods
+
+const someFunction = () => {
+    console.log('Hello World!');
+}
+
+someFunction();
