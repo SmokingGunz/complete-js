@@ -366,6 +366,77 @@ console.log(jonas);
 // "Jonas has 3 friends, and his best friend is called Michael."
 
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}.`);
-*/
+
 
 // 3.44 Object Methods
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Shmedtmann',
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'John', 'Jane'],
+    hasDriversLicense: true,
+
+    // calcAge: function (birthYear) {
+    //     return 2037 - birthYear;
+    // }
+
+    // calcAge: function () {
+    //     // console.log(this)
+    //     return 2037 - this.birthYear;
+    // }
+
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`;
+    }
+};
+
+console.log(jonas.calcAge());
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
+// console.log(jonas['calcAge'](1991));
+
+// Challenge
+// "Jonas is a 46-year old teacher, and he has a/or no drivers license."
+
+if (jonas.hasDriversLicense) {
+    console.log(`${jonas.firstName} is a ${jonas.age}-year old ${jonas.job}, and he has a drivers license.`);
+} else {
+    console.log(`${jonas.firstName} is a ${jonas.age}-year old ${jonas.job}, and he has no drivers license.`);
+}
+
+console.log(jonas.getSummary());
+*/
+
+/*
+CHALLENGE #3
+Let's go back to Mark and John comparing their BMIs!
+
+This time, let's use objects to implement the calculations! Remember: BMI = mass / (height * height) (mass in kg and height in meters).
+
+Your tasks:
+
+For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith). Name these objects as mark and john, and their properties exactly as fullName, mass and height.
+
+Create a calcBMI method on each object to calculate the BMI (the same method on both objects). Assign the BMI value to a property, and also return it from the method.
+
+Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!".
+
+TEST DATA: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 m tall.
+
+
+
+👋 OPTIONAL: You can watch my solution in video format in the next lecture
+
+
+
+IMPORTANT: The ** operator is not supported in this editor. Please make sure to use exactly this formula mass / (height * height), and not this one mass / (height ** 2).
+ */
+
