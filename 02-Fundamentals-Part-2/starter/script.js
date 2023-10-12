@@ -440,6 +440,7 @@ TEST DATA: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 
 IMPORTANT: The ** operator is not supported in this editor. Please make sure to use exactly this formula mass / (height * height), and not this one mass / (height ** 2).
  */
 
+/*
 const mark = {
     fullName: 'Mark Miller',
     mass: 78,
@@ -470,4 +471,39 @@ if (mark.calcBMI() > john.calcBMI()) {
 } else {
     console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`);
 }
+*/
+/*
+// 3.46 Loops
+
+// console.log(`Lifting weights repetition 1 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 2 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 3 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 4 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 5 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 6 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 7 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 8 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 9 🏋️‍♀️`);
+
+// for loop keeps running while condition is true
+for (let rep = 1; rep < 11; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+}
+*/
+
+// 3.47 Looping Arrays, Breaking and Continueing
+
+const jonasArray = [
+    'Jonas',
+    'Shmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'John', 'Jane'],
+    true
+];
+
+for (let i = 0; i < jonasArray.length; i++) {
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
+
 
