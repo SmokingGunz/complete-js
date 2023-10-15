@@ -539,5 +539,8 @@ for (let i = 0; i < jonasArray.length; i++) {
     console.log(jonasArray[i], typeof jonasArray[i]);
 }
 
-
-
+console.log(`----- CONTINUE WITH NUMBER -----`);
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[i] !== 'number') continue; // Continues when a number is found
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
