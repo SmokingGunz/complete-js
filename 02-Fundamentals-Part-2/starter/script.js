@@ -544,3 +544,12 @@ for (let i = 0; i < jonasArray.length; i++) {
     if (typeof jonasArray[i] !== 'number') continue; // Continues when a number is found
     console.log(jonasArray[i], typeof jonasArray[i]);
 }
+
+// Challenge
+
+
+console.log(`----- ONLY STRINGS -----`);
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[i] !== 'number') continue; // this skips over non-string values
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
