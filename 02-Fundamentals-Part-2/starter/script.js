@@ -547,3 +547,12 @@ for (let i = 0; i < jonasArray.length; i++) {
 
 
 // Challenge
+
+
+// "Jonas is a 46-year old teacher, and he has a/or no drivers license."
+
+if (jonas.hasDriversLicense) {
+    console.log(`${jonas.firstName} is a ${jonas.age}-year old ${jonas.job}, and he has a drivers license.`);
+} else {
+    console.log(`${jonas.firstName} is a ${jonas.age}-year old ${jonas.job}, and he has no drivers license.`);
+}
