@@ -545,6 +545,3 @@ for (let i = 0; i < jonasArray.length; i++) {
     console.log(jonasArray[i], typeof jonasArray[i]);
 }
 
-
-
-// Challenge
