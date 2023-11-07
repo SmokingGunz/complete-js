@@ -545,8 +545,3 @@ for (let i = 0; i < jonasArray.length; i++) {
     console.log(jonasArray[i], typeof jonasArray[i]);
 }
 
-
-// Challenge
-
-
-// "Jonas is a 46-year old teacher, and he has a/or no drivers license."
