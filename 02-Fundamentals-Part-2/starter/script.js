@@ -489,7 +489,7 @@ if (mark.calcBMI() > john.calcBMI()) {
 for (let rep = 1; rep < 11; rep++) {
     console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
-*/
+
 
 // 3.47 Looping Arrays, Breaking and Continueing
 
@@ -544,4 +544,30 @@ for (let i = 0; i < jonasArray.length; i++) {
     if (typeof jonasArray[i] !== 'number') continue; // Continues when a number is found
     console.log(jonasArray[i], typeof jonasArray[i]);
 }
+
+// 3.48 Looping Backwards and Loops In Loops
+
+const jonasArray = [
+    'Jonas',
+    'Shmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'John', 'Jane'],
+    true
+];
+
+for (let i = jonasArray.length - 1; i >= 0; i--) {
+    console.log(i, jonasArray[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`----- Starting Exercise ${exercise} -----`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weights repetition ${rep} ���️�����️`)
+    };
+}
+*/
+
+// 3.49 While Loops
 
