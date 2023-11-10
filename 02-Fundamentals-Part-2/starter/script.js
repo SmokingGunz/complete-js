@@ -620,3 +620,4 @@ Write a function calcAverage which takes an array called arr as an argument. Thi
 3. Call the function with the totals array.
 */
 
+
