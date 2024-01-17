@@ -590,7 +590,7 @@ while (dice !== 6) {
 };
 */
 
-/* 
+/*
 
 CHALLENGE #4
 Let's improve Steven's tip calculator even more, this time using loops!
@@ -620,6 +620,7 @@ Write a function calcAverage which takes an array called arr as an argument. Thi
 3. Call the function with the totals array.
 */
 
+/*
 const calcTip = function (bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
@@ -644,4 +645,80 @@ const calcAverage = function (arr) {
         sum += arr[i];
     }
     return sum / arr.length;
-}; 
+};
+
+console.log(calcAverage([2, 3, 7]));
+console.log(calcAverage(totals));
+*/
+
+/*
+// 3.33 Functions
+
+function logger() {
+    console.log(`My Name is Jonas`);
+}
+
+// calling / running / invoking the function
+logger();
+logger();
+logger();
+
+function fruitProcessor(apples, oranges) {
+    const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+    return juice;
+}
+
+const appleJuice = fruitProcessor(5, 10);
+console.log(appleJuice);
+console.log(fruitProcessor(5, 10));
+
+const appleOrangeJuice = fruitProcessor(2, 4);
+console.log(appleOrangeJuice);
+
+const num = Number('23');
+
+// 3.34 Function Declarariton vs. Function Expression
+
+// function Declararition
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
+
+const age1 = calcAge1(1991);
+console.log(age1);
+
+// function Expression
+
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+const age2 = calcAge2(1991);
+console.log(age2);
+
+// 3.35 Arrow Functions
+
+// function Expression
+
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+// Arrow Function
+const calcAge3 = birthYear => 2037 - birthYear;
+
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    return `${firstName} retires in ${retirement} years.`;
+}
+
+console.log(yearsUntilRetirement(1991, 'Jonas'));
+console.log(yearsUntilRetirement(1980, 'Bob'));
+*/
+
+// 3.36 Functions Calling Other Functions
+
