@@ -718,7 +718,88 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1980, 'Bob'));
-*/
 
 // 3.36 Functions Calling Other Functions
 
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+    
+    const juice = `Juice with ${applePieces} apple pieces and ${orangePieces} oranges`;
+    return juice;
+}
+
+const appleJuice = fruitProcessor(5, 10);
+console.log(appleJuice);
+
+// 3.37 Function review
+
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirement = 65 - age;
+    
+    if (retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years.`);
+        return retirement;
+    } else {
+        console.log(`${firstName} retires in ${retirement} years.`);
+        return -1;
+    }
+}
+
+console.log(yearsUntilRetirement(1991, 'Jonas'));
+console.log(yearsUntilRetirement(1950, 'Mike'));
+
+// 3.39 Introduction to Arrays
+
+const friend1 = 'Michael';
+const friend2 = 'John';
+const friend3 = 'Jane';
+
+const friends = ['Michael', 'John', 'Jane'];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020)
+console.log(friends[0]);
+console.log(friends[1]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay';
+console.log(friends);
+
+// friends = ['Michael', 'John', 'Jane', 'Jay'];
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Shmedtmann', 2037 - 1991, 'teacher', friends];
+console.log(jonas);
+
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+const years1 = [1990, 1967, 2002, 2010, 2018];
+console.log(calcAge2(years1));
+
+const age1 = calcAge2(years1[0]);
+const age2 = calcAge2(years1[1]);
+const age3 = calcAge2(years1[2]);
+console.log(age1, age2, age3);
+
+const ages = [age1, age2, age3];
+console.log(ages);
+*/
+
+// 3.40 Basic Array Operations (Methods)
+
+const friends = ['Michael', 'John', 'Jane'];
+friends.push('Jay');
