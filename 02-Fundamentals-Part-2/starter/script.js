@@ -797,9 +797,37 @@ console.log(age1, age2, age3);
 
 const ages = [age1, age2, age3];
 console.log(ages);
-*/
 
 // 3.40 Basic Array Operations (Methods)
 
 const friends = ['Michael', 'John', 'Jane'];
-friends.push('Jay');
+
+// add elements to the end of the array
+const newLength = friends.push('Jay');
+console.log(friends);
+console.log(newLength);
+
+// add elements to the beginning of the array
+friends.unshift('John');
+console.log(friends);
+
+// remove elements from the end of the array
+friends.pop();
+const popped = friends.pop();
+console.log(friends);
+console.log(popped);
+
+// remove elements from the beginning of the array
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('John'));
+console.log(friends.indexOf('Jay'));
+
+console.log(friends.includes('John'));
+console.log(friends.includes('Jay'));
+
+if (friends.includes('John')) {
+    console.log(`You have found John in your friends list`);
+}
+*/
