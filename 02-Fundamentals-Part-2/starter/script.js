@@ -728,7 +728,7 @@ function cutFruitPieces(fruit) {
 function fruitProcessor(apples, oranges) {
     const applePieces = cutFruitPieces(apples);
     const orangePieces = cutFruitPieces(oranges);
-    
+
     const juice = `Juice with ${applePieces} apple pieces and ${orangePieces} oranges`;
     return juice;
 }
@@ -745,7 +745,7 @@ const calcAge = function (birthYear) {
 const yearsUntilRetirement = function (birthYear, firstName) {
     const age = calcAge(birthYear);
     const retirement = 65 - age;
-    
+
     if (retirement > 0) {
         console.log(`${firstName} retires in ${retirement} years.`);
         return retirement;
@@ -830,7 +830,6 @@ console.log(friends.includes('Jay'));
 if (friends.includes('John')) {
     console.log(`You have found John in your friends list`);
 }
-*/
 
 // 3.42 Introduction to objects
 
@@ -843,9 +842,51 @@ const jonasArray = [
 ];
 
 const jonas = {
-    firstName: jonasArray[0],
-    lastName: jonasArray[1],
-    age: jonasArray[2],
-    job: jonasArray[3],
-    friends: jonasArray[4]
+    firstName: 'Jonas',
+    lastName: 'Shmedtmann',
+    age: 2037 - 1991,
+    job: 'Teacher',
+    friends: ['Michael', 'John', 'Jane']
 }
+
+// 3.43 Dot vs. Bracket notation
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Shmedtmann',
+    age: 2037 - 1991,
+    job: 'Teacher',
+    friends: ['Michael', 'John', 'Jane']
+}
+
+console.log(jonas);
+
+console.log(jonas.firstName);
+console.log(jonas['firstName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+const interestedIn = prompt(`What do you want to know about Jonas? Choose between first name, last name, age, job, and friends?`);
+
+
+if (jonas[interestedIn]) {
+    console.log(jonas[interestedIn]);
+} else {
+    console.log(`Sorry, I don't know about ${interestedIn}.`);
+}
+
+jonas.location = 'New York';
+jonas['twitter'] = '@jonasshmedtmann';
+
+//Challenge
+// 'Jonas has 3 friends, and his best friend is Michael.'
+
+const jonasInfo = `${jonas.firstName} has ${jonas.friends.length} friends, and his bestfriend is ${jonas.friends[0]}.`;
+
+console.log(jonasInfo);
+*/
+
+// 3.44 Object Methods
+
