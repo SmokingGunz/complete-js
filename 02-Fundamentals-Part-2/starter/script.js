@@ -831,3 +831,21 @@ if (friends.includes('John')) {
     console.log(`You have found John in your friends list`);
 }
 */
+
+// 3.42 Introduction to objects
+
+const jonasArray = [
+    'Jonas',
+    'Shmedtmann',
+    2037 - 1881,
+    'teacher',
+    ['Michael', 'John', 'Jane']
+];
+
+const jonas = {
+    firstName: jonasArray[0],
+    lastName: jonasArray[1],
+    age: jonasArray[2],
+    job: jonasArray[3],
+    friends: jonasArray[4]
+}
