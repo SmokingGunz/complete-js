@@ -886,7 +886,81 @@ jonas['twitter'] = '@jonasshmedtmann';
 const jonasInfo = `${jonas.firstName} has ${jonas.friends.length} friends, and his bestfriend is ${jonas.friends[0]}.`;
 
 console.log(jonasInfo);
-*/
 
 // 3.44 Object Methods
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Shmedtmann',
+    birthYear: 1991,
+    job: 'Teacher',
+    friends: ['Michael', 'John', 'Jane'],
+    hasDriversLicense: false,
+
+    // calcAge: function (birthYear) {
+        //     return 2037 - birthYear;
+        // }
+        // calcAge: function () {
+            //     return 2037 - this.birthYear;
+            // }
+
+            calcAge: function () {
+                this.age = 2037 - this.birthYear;
+                return this.age;
+            },
+
+            getSummary: function () {
+                return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and he has ${this.hasDriversLicense ? 'his drivers license' : 'no drivers license'}.`;
+            }
+
+        };
+
+
+        console.log(jonas.calcAge());
+        // console.log(jonas['calcAge']());
+
+        console.log(jonas.age);
+        console.log(jonas.age);
+        console.log(.age);
+
+        // Challenge
+        // 'Jonas is a 46 year old teacher, and he has a drivers license.'
+
+
+        const jonasInfo = `${jonas.firstName} is a ${jonas.age} year old ${jonas.job}, and he has ${jonas.hasDriversLicense ? 'his drivers license' : 'no drivers license'}.`;
+
+        console.log(jonasInfo);
+        console.log(jonas.getSummary());
+        
+        // 3.46 Iteration: The for loop
+        
+        console.log('Lifting weights repetition 1 🏋️‍♀️')
+        console.log('Lifting weights repetition 2 🏋️‍♀️')
+        console.log('Lifting weights repetition 3 🏋️‍♀️')
+        console.log('Lifting weights repetition 4 🏋️‍♀️')
+        console.log('Lifting weights repetition 5 🏋️‍♀️')
+        console.log('Lifting weights repetition 6 🏋️‍♀️')
+        console.log('Lifting weights repetition 7 🏋️‍♀️')
+        console.log('Lifting weights repetition 8 🏋️‍♀️')
+        console.log('Lifting weights repetition 9 🏋️‍♀️')
+        console.log('Lifting weights repetition 10 🏋️‍♀️')
+        
+        for (let i = 1; i <= 10; i++) {
+            console.log(`Lifting weights repetition ${i} ���️‍��️`);
+        }
+*/
+
+// 3.47 Looping arrays, breaking and continuing
+
+const jonasArray = [
+    'Jonas',
+    'Shmedtmann',
+    2037 - 1881,
+    'teacher',
+    ['Michael', 'John', 'Jane']
+];
+
+for (let i = 0; i < jonasArray.length; i++) {
+    console.log(jonasArray[i]);
+}
 
