@@ -931,9 +931,9 @@ const jonas = {
 
         console.log(jonasInfo);
         console.log(jonas.getSummary());
-        
+
         // 3.46 Iteration: The for loop
-        
+
         console.log('Lifting weights repetition 1 🏋️‍♀️')
         console.log('Lifting weights repetition 2 🏋️‍♀️')
         console.log('Lifting weights repetition 3 🏋️‍♀️')
@@ -944,13 +944,56 @@ const jonas = {
         console.log('Lifting weights repetition 8 🏋️‍♀️')
         console.log('Lifting weights repetition 9 🏋️‍♀️')
         console.log('Lifting weights repetition 10 🏋️‍♀️')
-        
+
         for (let i = 1; i <= 10; i++) {
             console.log(`Lifting weights repetition ${i} ���️‍��️`);
         }
-*/
 
-// 3.47 Looping arrays, breaking and continuing
+        // 3.47 Looping arrays, breaking and continuing
+
+        const jonasArray = [
+            'Jonas',
+            'Shmedtmann',
+            2037 - 1881,
+            'teacher',
+            ['Michael', 'John', 'Jane']
+        ];
+
+        const types = [];
+
+        for (let i = 0; i < jonasArray.length; i++) {
+            // Reading from jonasArray
+            console.log(jonasArray[i]);
+
+            // Filling the types array
+            // types[i] = typeof jonasArray[i];
+            types.push(typeof jonasArray[i]);
+        }
+
+        console.log(types);
+
+        const years = [1990, 1967, 2002, 2010, 2018];
+        const ages = [];
+
+        for (let i = 0; i < years.length; i++) {
+            ages.push(2037 - years[i]);
+        }
+
+        console.log(ages);
+
+        for (let i = 0; i < jonasArray.length; i++) {
+            if (typeof jonasArray[i] !== 'string') continue;
+
+            console.log(jonasArray[i], typeof jonasArray[i]);
+        }
+
+        for (let i = 0; i < jonasArray.length; i++) {
+            if (typeof jonasArray[i] === 'number') break;
+
+            console.log(jonasArray[i], typeof jonasArray[i]);
+        }
+
+// 3.48 Looping backwards and Loops in Loops
 
 const jonasArray = [
     'Jonas',
@@ -960,7 +1003,16 @@ const jonasArray = [
     ['Michael', 'John', 'Jane']
 ];
 
-for (let i = 0; i < jonasArray.length; i++) {
+for (let i = jonasArray.length - 1; i >= 0; i--) {
     console.log(jonasArray[i]);
 }
 
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`------------- Exercise ${exercise} -------`)
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise} Lifting weights repetition ${rep} ���️����️`);
+    }
+}
+*/
+
+//
