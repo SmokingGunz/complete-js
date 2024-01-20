@@ -1,3 +1,4 @@
 .DS_Store
 **/final/
 /course-material-v2.1
+.prettierrc
