@@ -43,5 +43,39 @@ while (sum < 100) {
 const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 
 // 1) Understanding the problem
+// - what is temp amplitude? Answer: Difference between the highest and lowest temperatures.
+// - How to compute the max and min temperatures? Answer: Find the highest and lowest temperatures in the array.
+// - What is a sensor error and what to do when one accurs?
 
 // 2) Breaking up into sub-problems
+// - How to ignore errors?
+// - Find max value in temperatures array?
+// - Find min value in temperatures array?
+// - Subtract min from max (amplitude) and then return it
+
+const calcTempAmplitude = (temperatures) => {
+    let max = temperatures[0];
+    let min = temperatures[0];
+
+    for (let i = 0; i < temperatures.length; i++) {
+        const currentTemp = temperatures[i];
+        if (typeof currentTemp !== 'number') continue;
+
+        if (currentTemp > max) max = currentTemp;
+        if (currentTemp < min) min = currentTemp;
+    }
+    console.log(max, min);
+    return max - min;
+};
+
+const amplitude = calcTempAmplitude(temperatures);
+console.log(amplitude);
+
+// Problem 2)
+// Function should now receive 2 arrays of temperatures.
+
+// 1) Understanding the problem
+// - With 2 arrays, shoudl we implement functionality twice? NO! Just merge the two arrays.
+
+// 2) Breaking up into sub-problems
+// -How to merger the two arrays?
