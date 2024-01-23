@@ -79,4 +79,24 @@ console.log(amplitude);
 
 // 2) Breaking up into sub-problems
 // -How to merger the two arrays?
-//
+
+const calcTempAmplitudeNew = (t1, t2) => {
+    const temperatures = t1.concat(t2);
+    console.log(temperatures);
+
+    let max = temperatures[0];
+    let min = temperatures[0];
+
+    for (let i = 0; i < temperatures.length; i++) {
+        const currentTemp = temperatures[i];
+        if (typeof currentTemp !== 'number') continue;
+
+        if (currentTemp > max) max = currentTemp;
+        if (currentTemp < min) min = currentTemp;
+    }
+    console.log(max, min);
+    return max - min;
+};
+
+const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [1, 2, 3]);
+console.log(amplitudeNew);
