@@ -33,7 +33,6 @@ while (sum < 100) {
     console.log(sum);
     sum++;
 }
-*/
 
 // 5.59 Using Google, Stack Overflow and MDN
 
@@ -56,11 +55,11 @@ const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 const calcTempAmplitude = (temperatures) => {
     let max = temperatures[0];
     let min = temperatures[0];
-
+    
     for (let i = 0; i < temperatures.length; i++) {
         const currentTemp = temperatures[i];
         if (typeof currentTemp !== 'number') continue;
-
+        
         if (currentTemp > max) max = currentTemp;
         if (currentTemp < min) min = currentTemp;
     }
@@ -83,14 +82,14 @@ console.log(amplitude);
 const calcTempAmplitudeNew = (t1, t2) => {
     const temperatures = t1.concat(t2);
     console.log(temperatures);
-
+    
     let max = temperatures[0];
     let min = temperatures[0];
-
+    
     for (let i = 0; i < temperatures.length; i++) {
         const currentTemp = temperatures[i];
         if (typeof currentTemp !== 'number') continue;
-
+        
         if (currentTemp > max) max = currentTemp;
         if (currentTemp < min) min = currentTemp;
     }
@@ -100,3 +99,50 @@ const calcTempAmplitudeNew = (t1, t2) => {
 
 const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [1, 2, 4]);
 console.log(amplitudeNew);
+
+const measureKelvin = function () {
+    const measurement = {
+        type: 'temp',
+        unit: 'kelvin',
+        // C) Fix the bug
+        // value: Number(prompt('Degrees Celsius')),
+        value: 10,
+    };
+    
+    // B) FIND THE BUG
+    console.log(measurement);
+    console.table(measurement);
+    
+    // console.log(measurement.value);
+    // console.warn(measurement.value);
+    // console.error(measurement.value);
+    
+    const kelvin = measurement.value + 273;
+    return kelvin;
+};
+// A) Identify the bug
+console.log(measureKelvin());
+
+const calcTempAmplitudeBug = (t1, t2) => {
+    const temperatures = t1.concat(t2);
+    console.log(temperatures);
+    
+    let max = 0;
+    let min = 0;
+    
+    for (let i = 0; i < temperatures.length; i++) {
+        const currentTemp = temperatures[i];
+        if (typeof currentTemp !== 'number') continue;
+        
+        debugger;
+        if (currentTemp > max) max = currentTemp;
+        if (currentTemp < min) min = currentTemp;
+    }
+    console.log(max, min);
+    return max - min;
+};
+
+const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
+// A) Identify the bug
+console.log(amplitudeBug);
+*/
