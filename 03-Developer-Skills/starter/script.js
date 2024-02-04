@@ -100,4 +100,3 @@ const calcTempAmplitudeNew = (t1, t2) => {
 
 const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [1, 2, 4]);
 console.log(amplitudeNew);
-console.log(amplitudeNew);
