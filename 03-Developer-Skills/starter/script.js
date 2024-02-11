@@ -146,3 +146,4 @@ const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
 // A) Identify the bug
 console.log(amplitudeBug);
 */
+console.log(amplitudeBug);
